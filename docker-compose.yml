@@ -1,0 +1,28 @@
+version: '3.5'
+
+services:
+  mysqldb:
+    image: mysql:8.0.27
+    restart: always
+    volumes:
+      - datavolume:/var/lib/mysql
+
+    environment:
+      MYSQL_ROOT_PASSWORD: VvJbAZ5L
+      MYSQL_DATABASE: school
+      MYSQL_USER: school-rs
+      MYSQL_PASSWORD: aqPcK1SM
+    ports:
+      - "3306:3306"
+
+  app_service:
+    depends_on:
+      - mysqldb
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
+volumes:
+  datavolume:
