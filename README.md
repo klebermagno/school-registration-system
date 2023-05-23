@@ -1,7 +1,10 @@
+# School registration system
 
+The School Registration System is a robust and comprehensive back-end application, engineered with Java 8 and Spring Boot. The system offers a seamless and intuitive REST API for managing and manipulating various elements of a school environment, including students and courses. With this API, users can perform a variety of functions such as creating new student profiles, adding new courses, and establishing robust filters for enhanced data querying.
 
-# Project 1: School registration system
+Some of the key capabilities include filtering for students enrolled in a specific course, locating courses associated with a particular student, identifying courses with no current student enrolment, and highlighting students who are not currently enrolled in any courses.
 
+Unit tests, powered by JUnit, ensure the system's reliability and robustness, validating its functionality across multiple use-cases. Additionally, the project employs Docker technology, providing a Dockerfile for easy containerization and enhanced portability. This combination of features offers both efficiency and scalability, making the School Registration System a comprehensive solution for managing academic institutions' registration processes.
 ## Design and implement simple school registration system
 - Assuming you already have a list of students
 - Assuming you already have a list of courses
